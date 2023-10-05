@@ -8,6 +8,9 @@
 console.log("Starting interval!");
 setInterval(async () => {
   console.log("Making request...");
-  const res = await fetch("example-server.apps.svc.cluster.local");
-  console.log("Recieved data", res);
+  const res = await fetch(
+    "http://example-server-app.apps.svc.cluster.local/example"
+  );
+  const jsonResponse = await res.json();
+  console.log("Recieved data", jsonResponse);
 }, 1000);
