@@ -1,7 +1,7 @@
 //
 //
 //
-// All this does is fetch every second.
+// All this does is fetch twice a second.
 //
 //
 //
@@ -13,4 +13,4 @@ setInterval(async () => {
   );
   const jsonResponse = await res.json();
   console.log("Recieved data", jsonResponse);
-}, 1000);
+}, 500);
