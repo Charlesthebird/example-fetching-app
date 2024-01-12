@@ -1,7 +1,7 @@
 //
 //
 //
-// All this does is fetch every second or so.
+// All this does is fetch 5 times a second.
 //
 //
 //
